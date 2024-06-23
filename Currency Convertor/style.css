@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ubuntu:wght@400;700&display=swap');
+*{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    width: 0px;
+}
+body::before{
+    background: url('sl_020622_4930_29.jpg') no-repeat center center/cover;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    z-index: -1000000;
+    top: 0;
+}
+.logo{
+    background: url("abc.png")center center/cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+.containor{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin:50px auto;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(0, 0, 0, 0.121); 
+    backdrop-filter: blur(10px);  
+    box-shadow: 10px 10px 30px black;
+}
+.containor form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+}
+.containor form label{
+    font-size: 0.7rem;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    margin-left: 20px;
+    opacity: 0.9;
+}
+.containor form #Currency-One,#Currency-Two {
+    font-size: 1.1rem;
+    border-radius: 20px;
+    padding: 18px;
+    border: 2px solid #ffffff47;
+    box-shadow: 5px 5px 10px black, inset 1px 1px 10px rgba(0, 0, 0, 0.408);
+    background: transparent;
+}
+.containor .form-select{
+    display: flex;
+    flex-direction: column;
+}
+.containor form #Cvalue1,#Cvalue2{
+    padding: 10px;
+    font-size: 2.5rem;
+    text-align: center;
+    border-radius: 10px;
+    width:25vw;
+    border: 2px solid #ffffff47;
+    background: transparent;
+    box-shadow: 5px 5px 10px black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.containor .headline{
+    font-size: 1.1rem;
+    margin: 80px;
+    text-align: center;
+}
+.containor .headline h1{
+    font-size: 2.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.containor .headline p{
+    margin: 8px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.containor #table{
+    margin: 20px;
+    width: 55vw;
+    text-align: center;
+}
+.containor .output{
+    display: none;
+    height: 200px;
+    overflow-y: auto;
+    margin: 50px 0px;
+    border: 2px solid #ffffff47;
+    border-radius: 8px;
+}
+.containor .output::-webkit-scrollbar{
+    width: 0px;
+}
+.containor .output-heading {
+    display: none;
+    margin-top: 50px;
+}
+.containor #table thead tr th{
+    border: 2px solid #ffffff47;
+    font-size: 2rem;
+    border-radius: 5px;
+    color: rgb(16, 14, 14);
+}
+.containor input[type="submit"]{
+    font-size: 1.4rem;
+    padding: 10px 30px;
+    border: 2px solid #ffffff47;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 5px 5px 10px black;
+}
+.containor select .menu{
+    color: black;
+}
